@@ -29,47 +29,51 @@
  	margin: 0;
  }
 
-.info-location{
-	margin-top: 10px;
-	display: flex;
-	font-weight: bold;
+ .info-location{
+   margin-top: 10px;
+   display: flex;
+   font-weight: bold;
 }
 
 .info-location>a:not(:last-child){
-	margin-right: 20px;
+ margin-right: 20px;
 }
 
 .info-web-contacts{
 	margin-bottom: 10px;
 }
 
- .block{
- 	padding: 10px 20px;
- }
+.block{
+  padding: 10px 20px;
+}
 
- .btn-icon{
- 	display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 12px;
-    line-height: 22px;
-    background-color: #337ab7;
-    color: white;
- }
+.btn-icon{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+  background-color: #337ab7;
+  color: white;
+}
 
- .btn-homepage{
- 	background-color: #60AF11;
- }
+.btn-homepage{
+  background-color: #60AF11;
+}
 
- .btn-facebook{
- 	background-color: #2E4881;
- }
+.btn-facebook{
+  background-color: #2E4881;
+}
 
- .btn-email{
- 	background-color: #F2A347;
- }
+.btn-email{
+  background-color: #F2A347;
+}
+
+.img-responsive{
+  width:100%;
+}
 
 /* ==========================================================================
  Colors
@@ -126,21 +130,26 @@
  	.block-presentation{
  		flex: 2 30%;
  	}
+
+
+    .block-break{
+        display: none;
+    }
+}
+
+/*Desktop or up*/
+@media (min-width: 992px) {
+  .block-main{
+     flex: 1 100%;
  }
 
- /*Desktop or up*/
- @media (min-width: 992px) {
- 	.block-main{
- 		flex: 1 100%;
- 	}
- 	
- 	.block-right{
- 		display: block;
- 		flex: 0 25%;
- 	}
-
-
+ .block-right{
+     display: block;
+     flex: 0 25%;
  }
+
+
+}
 
 
 
